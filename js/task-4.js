@@ -1,26 +1,48 @@
+// function getShippingCost(country) {
+//   let credits;
+//   switch (country) {
+//     case "China":
+//       credits = 100;
+//       console.log(`Shipping to ${country} will cost ${credits} credits`);
+//       break;
+//     case "Chile":
+//       credits = 250;
+//       console.log(`Shipping to ${country} will cost ${credits} credits`);
+//       break;
+//     case "Australia":
+//       credits = 170;
+//       console.log(`Shipping to ${country} will cost ${credits} credits`);
+//       break;
+//     case "Jamaica":
+//       credits = 120;
+//       console.log(`Shipping to ${country} will cost ${credits} credits`);
+//       break;
+
+//     default:
+//       console.log("Sorry, there is no delivery to your country");
+//       break;
+//   }
+// }
 function getShippingCost(country) {
   let credits;
   switch (country) {
     case "China":
       credits = 100;
-      console.log(`Shipping to ${country} will cost ${credits} credits`);
-      break;
+      return `Shipping to ${country} will cost ${credits} credits`;
     case "Chile":
       credits = 250;
-      console.log(`Shipping to ${country} will cost ${credits} credits`);
-      break;
+      return `Shipping to ${country} will cost ${credits} credits`;
+
     case "Australia":
       credits = 170;
-      console.log(`Shipping to ${country} will cost ${credits} credits`);
-      break;
+      return `Shipping to ${country} will cost ${credits} credits`;
+
     case "Jamaica":
       credits = 120;
-      console.log(`Shipping to ${country} will cost ${credits} credits`);
-      break;
+      return `Shipping to ${country} will cost ${credits} credits`;
 
     default:
-      console.log("Sorry, there is no delivery to your country");
-      break;
+      return "Sorry, there is no delivery to your country";
   }
 }
 
